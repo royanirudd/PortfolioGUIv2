@@ -41,25 +41,56 @@
         </div>
     </nav>
     <section id="profile">
-    <div class="section-container">
-        <div class="section_pic-container">
-            <img src="./assets/profile.png" alt="Anirudh Roy">
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/profile.png" alt="Anirudh Roy">
+            </div>
+            <div class="section_text-container">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">Anirudh Roy</h1>
+                <p class="section_text_p2">I'm a Software Engineer and Web Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Me</button>
+                </div>
+                <div id="socials-container">
+                    <img class="icon" src="./assets/github.png" alt="Github"
+                        onclick="window.open('https://github.com/royanirudd')">
+                    <img class="icon" src="./assets/linkedin.png" alt="LinkedIn"
+                        onclick="window.open('https://www.linkedin.com/in/anirudh-roy1/')">
+                </div>
+            </div>
         </div>
-        <div class="section_text-container">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="title">Anirudh Roy</h1>
-            <p class="section_text_p2">I'm a Software Engineer and Web Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Me</button>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img class="about-pic" src="./assets/about.png" alt="Anirudh Roy">
             </div>
-            <div id="socials-container">
-                <img class="icon" src="./assets/github.png" alt="Github" onclick="window.open('https://github.com/royanirudd')">
-                <img class="icon" src="./assets/linkedin.png" alt="LinkedIn"
-                    onclick="window.open('https://www.linkedin.com/in/anirudh-roy1/')">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img class="icon" src="./assets/experience.png" alt="Experience icon">
+                        <h3>Experience</h3>
+                        <p>1 year of experience</p>
+                    </div>
+                    <div class="details-container">
+                        <img class="icon" src="./assets/education.png" alt="Education icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Mathematics, Computer Science and Statistics</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
         </div>
-            </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#experience'">
+
     </section>
     <script src="scriptGUI.js"></script>
 </body>

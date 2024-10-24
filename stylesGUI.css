@@ -156,16 +156,20 @@ a:hover {
 .hamburger-icon span:nth-child(3) {
 	transform: none;
 }
+
+/* Section */
+
+
 .section-container {
-    display: flex; /* Enables flexbox layout */
-    align-items: center; /* Vertically center the items */
-    justify-content: center; /* Center them horizontally */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
 .section_text-container {
 	align-self: center;
-	text-align:center;
+	text-align: center;
 }
 
 .section_text p {
@@ -178,7 +182,7 @@ a:hover {
 
 .section_text_p2 {
 	font-size: 1.75rem;
-	margin-bottom 1rem;
+	margin-bottom: 1rem;
 }
 
 .title {
@@ -217,24 +221,24 @@ a:hover {
 }
 
 .btn-color-1 {
-    background: black; /* Default for button 1 */
-    color: white; /* Text color for button 1 */
+	background: black;
+	color: white;
 }
 
 .btn-color-2 {
-    background: white; /* Default for button 2 */
-    color: black; /* Text color for button 2 */
-    border: rgb(53, 53, 53) 0.1rem solid; /* Border for button 2 */
+	background: white;
+	color: black;
+	border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1:hover {
-    background: white; /* Button 1 becomes white on hover */
-    color: black; /* Text color becomes black */
+	background: white;
+	color: black;
 }
 
 .btn-color-2:hover {
-    background: black; /* Button 2 becomes black on hover */
-    color: white; /* Text color becomes white */
+	background: black;
+	color: white;
 }
 
 
