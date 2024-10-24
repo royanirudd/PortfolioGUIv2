@@ -22,6 +22,45 @@
             </ul>
         </div>
     </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Anirudh Roy</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+    <div class="section-container">
+        <div class="section_pic-container">
+            <img src="./assets/profile.png" alt="Anirudh Roy">
+        </div>
+        <div class="section_text-container">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Anirudh Roy</h1>
+            <p class="section_text_p2">I'm a Software Engineer and Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img class="icon" src="./assets/github.png" alt="Github" onclick="window.open('https://github.com/royanirudd')">
+                <img class="icon" src="./assets/linkedin.png" alt="LinkedIn"
+                    onclick="window.open('https://www.linkedin.com/in/anirudh-roy1/')">
+            </div>
+        </div>
+            </div>
+    </section>
     <script src="scriptGUI.js"></script>
 </body>
 
