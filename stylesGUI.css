@@ -159,6 +159,14 @@ a:hover {
 
 /* Section */
 
+section {
+	padding-top: 4vh;
+	height: 96vh;
+	margin: 0 10rem;
+	box-sizing: border-box;
+	min-height: fit-content;
+}
+
 
 .section-container {
 	display: flex;
@@ -166,13 +174,28 @@ a:hover {
 	justify-content: center;
 }
 
+/* profile */
+#profile {
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+	height: 80vh;
+}
+
+.section_pic-container-1 img {
+	display: flex;
+	height: 400px;
+	width: 350px;
+	margin: auto 0px;
+	border-radius: 50%;
+}
 
 .section_text-container {
 	align-self: center;
 	text-align: center;
 }
 
-.section_text p {
+.section_text-container p {
 	font-weight: 600;
 }
 
@@ -244,4 +267,60 @@ a:hover {
 
 .btn-container {
 	gap: 1rem;
+}
+
+
+/* About section */
+
+#about {
+	position: relative;
+}
+
+.about-containers {
+	gap: 2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.about-details-container {
+	justify-content: center;
+	flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+	display: flex;
+}
+
+.about-pic {
+	border-radius: 2rem;
+}
+
+.arrow {
+	padding-top: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 95%;
+}
+
+.details-container {
+	padding: 1.5rem;
+	flex: 1;
+	background: white;
+	border-radius: 2rem;
+	border: rgb(53, 53, 53) 0.1rem solid;
+	border-color: rbg(163, 163, 163);
+	text-align: center;
+}
+
+.section-container {
+	gap: 4rem;
+	height: 80%;
+}
+
+.section_pic-container-2 img {
+	display: flex;
+	height: 400px;
+	width: 400px;
+	margin: auto 0;
 }
