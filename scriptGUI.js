@@ -7,59 +7,32 @@ function toggleMenu() {
 
 
 
-//async function fetchGitHubProjects() {
-//const username = 'royanirudd'; // Replace with your GitHub username
-//const url = `https://api.github.com/users/${username}/repos?sort=created&per_page=6`;
-//
-//try {
-//    const response = await fetch(url);
-//    const repos = await response.json();
-//
-//    const projects = document.querySelectorAll('.project-article');
-//
-//    repos.forEach((repo, index) => {
-//	if (index < projects.length) {
-//	    const descriptionElement = projects[index].querySelector('.project-description p');
-//	    const buttonElement = projects[index].querySelector('.project-description button');
-//
-//	    descriptionElement.textContent = repo.description || 'No description available';
-//	    buttonElement.onclick = () => window.open(repo.html_url, '_blank');
-//	}
-//    });
-//} catch (error) {
-//    console.error('Error fetching GitHub projects:', error);
-//}
-//}
-//
-//// Call the function when the document is fully loaded
-//document.addEventListener('DOMContentLoaded', fetchGitHubProjects);
+async function fetchGitHubProjects() {
+const username = 'royanirudd'; 
+const url = `https://api.github.com/users/${username}/repos?sort=created&per_page=6`;
 
-async function fetchGitHubPopularProjects() {
-        const url = `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=stars&direction=desc&per_page=6`;
+try {
+    const response = await fetch(url);
+    const repos = await response.json();
 
-        try {
-            const response = await fetch(url, {
-                headers: {
-                    'Authorization': `Bearer ${GITHUB_TOKEN}`
-                }
-            });
+    const projects = document.querySelectorAll('.project-article');
 
-            const repos = await response.json();
-            const projectArticles = document.querySelectorAll('.project-article');
+    repos.forEach((repo, index) => {
+	if (index < projects.length) {
+	    const descriptionElement = projects[index].querySelector('.project-description p');
+	    const buttonElement = projects[index].querySelector('.project-description button');
 
-            repos.forEach((repo, index) => {
-                if (index < projectArticles.length) {
-                    const descriptionElement = projectArticles[index].querySelector('.project-description p');
-                    const buttonElement = projectArticles[index].querySelector('.project-description button');
-
-                    descriptionElement.textContent = repo.description || 'No description available';
-                    buttonElement.onclick = () => window.open(repo.html_url, '_blank');
-                }
-            });
-        } catch (error) {
-            console.error('Error fetching GitHub repositories:', error);
-        }
-    }
+	    descriptionElement.textContent = repo.description || 'No description available';
+	    buttonElement.onclick = () => window.open(repo.html_url, '_blank');
+	}
+    });
+} catch (error) {
+    console.error('Error fetching GitHub projects:', error);
+}
+}
 
 // Call the function when the document is fully loaded
-document.addEventListener('DOMContentLoaded', fetchGitHubPopularProjects);
+document.addEventListener('DOMContentLoaded', fetchGitHubProjects);
+
+
+
