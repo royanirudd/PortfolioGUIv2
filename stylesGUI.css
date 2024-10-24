@@ -324,3 +324,117 @@ section {
 	width: 400px;
 	margin: auto 0;
 }
+
+
+/* Experience section */
+
+#tech-stack {
+	padding: 2vh 5rem;
+	/* Adjusted padding for smaller container */
+	background-color: white;
+	/* Optional: Maintain background */
+	border-radius: 2rem;
+	/* Matches other section styles */
+	border: rgb(53, 53, 53) 0.1rem solid;
+	/* Matches border styling */
+	max-width: 1200px;
+	/* Set max width for the container */
+	height: fit-content;
+	margin: auto;
+	/* Center the container */
+}
+
+.tech-stack-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* Allows boxes to wrap */
+	gap: 1rem;
+	/* Reduced gap between boxes */
+	justify-content: center;
+	/* Center align boxes */
+}
+
+
+.tech-category {
+	flex: 1 1 200px;
+	/* Flex growth and shrinkage with a minimum width */
+	padding: 1rem;
+	/* Padding for internal spacing */
+	text-align: center;
+	/* Center align text and icons */
+	background: rgba(255, 255, 255, 0.9);
+	/* Optional: Add slight background */
+	border: 1px solid rgb(230, 230, 230);
+	/* Box border */
+	border-radius: 1rem;
+	/* Rounded corners */
+}
+
+.tech-icons {
+	display: flex;
+	flex-wrap: wrap;
+	/* Wrap icons */
+	justify-content: center;
+	/* Center align icons */
+	gap: 1rem;
+	/* Space between icons */
+}
+
+.tech-icons img {
+	height: 40px;
+	/* Adjust icon size */
+	width: auto;
+	/* Maintain aspect ratio */
+}
+
+
+/* Projects */
+
+#projects {
+	padding: 4vh 10rem;
+	/* Adjust padding as needed */
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: column;
+	/* Stacking articles vertically */
+	gap: 2rem;
+	/* Space between articles */
+}
+
+.project-article {
+	display: flex;
+	background: white;
+	/* Background for articles */
+	border-radius: 2rem;
+	/* Matching rounded corners */
+	border: rgb(53, 53, 53) 0.1rem solid;
+	/* Border styling */
+	padding: 1.5rem;
+	/* Padding inside articles */
+}
+
+.project-image {
+	flex: 1;
+	/* Allow image container to grow */
+	margin-right: 1rem;
+	/* Space between image and description */
+}
+
+.project-description {
+	flex: 2;
+	/* Allow description container to grow */
+}
+
+.project-description h3 {
+	font-size: 1.5rem;
+	/* Adjust title size */
+	margin-bottom: 0.5rem;
+	/* Space below title */
+}
+
+.project-description p {
+	margin-bottom: 1rem;
+	/* Space below description */
+}
