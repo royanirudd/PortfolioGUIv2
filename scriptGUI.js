@@ -32,7 +32,7 @@ try {
 }
 
 // Call the function when the document is fully loaded
-document.addEventListener('DOMContentLoaded', fetchGitHubProjects);
+//document.addEventListener('DOMContentLoaded', fetchGitHubProjects);
 
 
 
